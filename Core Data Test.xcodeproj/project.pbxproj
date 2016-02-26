@@ -14,6 +14,12 @@
 		B1392FC91C7FD1830041D4A3 /* Core_Data_Test.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B1392FC71C7FD1830041D4A3 /* Core_Data_Test.xcdatamodeld */; };
 		B1392FCB1C7FD1830041D4A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1392FCA1C7FD1830041D4A3 /* Assets.xcassets */; };
 		B1392FCE1C7FD1830041D4A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1392FCC1C7FD1830041D4A3 /* LaunchScreen.storyboard */; };
+		B1392FD91C7FD40C0041D4A3 /* NoteManagedObject+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = B1392FD61C7FD40C0041D4A3 /* NoteManagedObject+CoreDataProperties.m */; };
+		B1392FDA1C7FD40C0041D4A3 /* NoteManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B1392FD81C7FD40C0041D4A3 /* NoteManagedObject.m */; };
+		B1392FE01C7FDB530041D4A3 /* CoreDataDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = B1392FDF1C7FDB530041D4A3 /* CoreDataDAO.m */; };
+		B1392FE31C7FDC300041D4A3 /* NoteDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = B1392FE21C7FDC300041D4A3 /* NoteDAO.m */; };
+		B1392FE61C7FDDD80041D4A3 /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = B1392FE51C7FDDD80041D4A3 /* Note.m */; };
+		B1392FE91C8023580041D4A3 /* SubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1392FE81C8023580041D4A3 /* SubViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +34,18 @@
 		B1392FCA1C7FD1830041D4A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B1392FCD1C7FD1830041D4A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B1392FCF1C7FD1830041D4A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1392FD51C7FD40C0041D4A3 /* NoteManagedObject+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NoteManagedObject+CoreDataProperties.h"; sourceTree = "<group>"; };
+		B1392FD61C7FD40C0041D4A3 /* NoteManagedObject+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NoteManagedObject+CoreDataProperties.m"; sourceTree = "<group>"; };
+		B1392FD71C7FD40C0041D4A3 /* NoteManagedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteManagedObject.h; sourceTree = "<group>"; };
+		B1392FD81C7FD40C0041D4A3 /* NoteManagedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteManagedObject.m; sourceTree = "<group>"; };
+		B1392FDE1C7FDB530041D4A3 /* CoreDataDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataDAO.h; sourceTree = "<group>"; };
+		B1392FDF1C7FDB530041D4A3 /* CoreDataDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataDAO.m; sourceTree = "<group>"; };
+		B1392FE11C7FDC300041D4A3 /* NoteDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteDAO.h; sourceTree = "<group>"; };
+		B1392FE21C7FDC300041D4A3 /* NoteDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteDAO.m; sourceTree = "<group>"; };
+		B1392FE41C7FDDD80041D4A3 /* Note.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Note.h; sourceTree = "<group>"; };
+		B1392FE51C7FDDD80041D4A3 /* Note.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Note.m; sourceTree = "<group>"; };
+		B1392FE71C8023580041D4A3 /* SubViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubViewController.h; sourceTree = "<group>"; };
+		B1392FE81C8023580041D4A3 /* SubViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,13 +80,25 @@
 			children = (
 				B1392FBE1C7FD1830041D4A3 /* AppDelegate.h */,
 				B1392FBF1C7FD1830041D4A3 /* AppDelegate.m */,
+				B1392FDE1C7FDB530041D4A3 /* CoreDataDAO.h */,
+				B1392FDF1C7FDB530041D4A3 /* CoreDataDAO.m */,
+				B1392FE11C7FDC300041D4A3 /* NoteDAO.h */,
+				B1392FE21C7FDC300041D4A3 /* NoteDAO.m */,
 				B1392FC11C7FD1830041D4A3 /* ViewController.h */,
 				B1392FC21C7FD1830041D4A3 /* ViewController.m */,
+				B1392FE71C8023580041D4A3 /* SubViewController.h */,
+				B1392FE81C8023580041D4A3 /* SubViewController.m */,
 				B1392FC41C7FD1830041D4A3 /* Main.storyboard */,
+				B1392FE41C7FDDD80041D4A3 /* Note.h */,
+				B1392FE51C7FDDD80041D4A3 /* Note.m */,
 				B1392FCA1C7FD1830041D4A3 /* Assets.xcassets */,
 				B1392FCC1C7FD1830041D4A3 /* LaunchScreen.storyboard */,
 				B1392FCF1C7FD1830041D4A3 /* Info.plist */,
 				B1392FC71C7FD1830041D4A3 /* Core_Data_Test.xcdatamodeld */,
+				B1392FD51C7FD40C0041D4A3 /* NoteManagedObject+CoreDataProperties.h */,
+				B1392FD61C7FD40C0041D4A3 /* NoteManagedObject+CoreDataProperties.m */,
+				B1392FD71C7FD40C0041D4A3 /* NoteManagedObject.h */,
+				B1392FD81C7FD40C0041D4A3 /* NoteManagedObject.m */,
 				B1392FBB1C7FD1830041D4A3 /* Supporting Files */,
 			);
 			path = "Core Data Test";
@@ -152,9 +182,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1392FE61C7FDDD80041D4A3 /* Note.m in Sources */,
+				B1392FDA1C7FD40C0041D4A3 /* NoteManagedObject.m in Sources */,
+				B1392FD91C7FD40C0041D4A3 /* NoteManagedObject+CoreDataProperties.m in Sources */,
 				B1392FC91C7FD1830041D4A3 /* Core_Data_Test.xcdatamodeld in Sources */,
 				B1392FC31C7FD1830041D4A3 /* ViewController.m in Sources */,
+				B1392FE91C8023580041D4A3 /* SubViewController.m in Sources */,
 				B1392FC01C7FD1830041D4A3 /* AppDelegate.m in Sources */,
+				B1392FE01C7FDB530041D4A3 /* CoreDataDAO.m in Sources */,
+				B1392FE31C7FDC300041D4A3 /* NoteDAO.m in Sources */,
 				B1392FBD1C7FD1830041D4A3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
