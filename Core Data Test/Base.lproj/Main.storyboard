@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9046" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9035"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -85,6 +86,7 @@
                         <viewControllerLayoutGuide type="bottom" id="5xY-Be-C3q"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="9px-dP-aRk">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ndV-JI-NJl">
@@ -97,24 +99,6 @@
                                     <action selector="findAllNote:" destination="hse-fW-eRF" eventType="touchUpInside" id="TWs-TJ-DTc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Am-01-MbA">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <animations/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="删除数据"/>
-                                <connections>
-                                    <action selector="deleteNote:" destination="hse-fW-eRF" eventType="touchUpInside" id="yhu-bL-qoa"/>
-                                </connections>
-                            </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="krn-2w-TuQ">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <animations/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="15" width="360" height="352"/>
-                                </variation>
-                            </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LBI-lf-bjw">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <animations/>
@@ -123,6 +107,16 @@
                                 <state key="normal" title="修改数据"/>
                                 <connections>
                                     <action selector="modifyNote:" destination="hse-fW-eRF" eventType="touchUpInside" id="8Xt-N2-wfI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Am-01-MbA">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="删除数据"/>
+                                <connections>
+                                    <action selector="deleteNote:" destination="hse-fW-eRF" eventType="touchUpInside" id="yhu-bL-qoa"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -139,39 +133,34 @@
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="ndV-JI-NJl"/>
-                                <exclude reference="3Am-01-MbA"/>
-                                <exclude reference="krn-2w-TuQ"/>
                                 <exclude reference="LBI-lf-bjw"/>
+                                <exclude reference="3Am-01-MbA"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="Rzx-Ws-YNZ"/>
-                                <exclude reference="Lb7-tG-wfb"/>
-                                <exclude reference="DKI-SR-CvV"/>
                                 <exclude reference="jRt-DH-FY2"/>
                                 <exclude reference="z7i-ga-2Vw"/>
                                 <exclude reference="zsk-nL-fdn"/>
+                                <exclude reference="Lb7-tG-wfb"/>
+                                <exclude reference="DKI-SR-CvV"/>
+                                <exclude reference="Rzx-Ws-YNZ"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="ndV-JI-NJl"/>
-                                <include reference="3Am-01-MbA"/>
-                                <include reference="krn-2w-TuQ"/>
                                 <include reference="LBI-lf-bjw"/>
+                                <include reference="3Am-01-MbA"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="Rzx-Ws-YNZ"/>
-                                <include reference="Lb7-tG-wfb"/>
-                                <include reference="DKI-SR-CvV"/>
                                 <include reference="jRt-DH-FY2"/>
                                 <include reference="z7i-ga-2Vw"/>
                                 <include reference="zsk-nL-fdn"/>
+                                <include reference="Lb7-tG-wfb"/>
+                                <include reference="DKI-SR-CvV"/>
+                                <include reference="Rzx-Ws-YNZ"/>
                             </mask>
                         </variation>
                     </view>
-                    <connections>
-                        <outlet property="tableview" destination="krn-2w-TuQ" id="AeG-4Y-kwf"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2ri-ca-BB2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

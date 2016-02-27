@@ -35,12 +35,13 @@
     NSDate *date =[NSDate date];
     NSString *string = [dateformatter stringFromDate:date];
      NSDate *datenow =[ dateformatter dateFromString:string];
+    NSLog(@"当前时间为：%@",datenow);
     NSLog(@"当前系统时间为：%@",string);
     if ([self.ContentTf.text isEqualToString:@""] ==YES) {
         UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"警告" message:@"请输入便签内容！！！" preferredStyle:UIAlertControllerStyleAlert];
         // Create the actions.
         UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
-            NSLog(@"The \"Okay/Cancel\" alert's cancel action occured.");
+            NSLog(@"点击了确定按钮");
         }];
         
       
